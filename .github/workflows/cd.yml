@@ -20,7 +20,8 @@ jobs:
       - name: Install golangci-lint
         uses: golangci/golangci-lint-action@v4
         with:
-          version: v2.1.5
+            version: v1.55.2
+          
 
       - name: Run tests
         run: go test ./...
