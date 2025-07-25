@@ -27,10 +27,10 @@ jobs:
           
 
       - name: Run tests
-        run: go test ./...
+        run: make test
 
       - name: Build binary
-        run: go build -o go-app
+        run: make build
 
       - name: Upload release asset
         uses: softprops/action-gh-release@v2
